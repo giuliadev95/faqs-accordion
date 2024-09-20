@@ -1,4 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, hsl(292, 42%, 14%) 30%, hsl(275, 100%, 97%) 10%);
+}
 
+#page_wrapper {
+    background-color: white;
+    color:hsl(292, 42%, 14%);
+    border-radius: 3%;
+}
+
+#star {
+    width: 4px;
+}
 .minus {
     display: none;
 }
@@ -15,17 +33,20 @@
     display: none;
 }
 
+p {
+    color: hsl(292, 16%, 49%)
+}
 
 .answer {
-    max-height: 0; /* Altezza iniziale zero */
-    opacity: 0; /* Inizialmente invisibile */
-    overflow: hidden; /* Nasconde il contenuto che eccede il max-height */
+    max-height: 0;
+    opacity: 0; 
+    overflow: hidden; 
     transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .answer.show {
     
-    max-height: 31.25rem; /* Altezza sufficiente per contenere il contenuto */
+    max-height: 31.25rem;
     opacity: 1;
     
 }
