@@ -6,17 +6,35 @@ body {
     height: 100vh;
     width: 100%;
     background: linear-gradient(180deg, hsl(292, 42%, 14%) 30%, hsl(275, 100%, 97%) 10%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: "Work Sans", sans-serif;
+       
+}
+
+p {
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+    font-size: 4wv;
+}
+.h1 {
+    font-weight:700;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.h2 {
+    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); 
 }
 
 #page_wrapper {
     background-color: white;
     color:hsl(292, 42%, 14%);
-    border-radius: 3%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
-#star {
-    width: 4px;
-}
 .minus {
     display: none;
 }
@@ -33,9 +51,6 @@ body {
     display: none;
 }
 
-p {
-    color: hsl(292, 16%, 49%)
-}
 
 .answer {
     max-height: 0;
@@ -56,3 +71,14 @@ p {
     flex-direction: row;
     justify-content: space-between;
 }
+
+/*
+@media screen and (min-width: 426px) {
+    body {
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    };
+}
+*/
