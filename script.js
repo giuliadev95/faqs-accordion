@@ -40,3 +40,6 @@ minus.forEach((minus, index) => {
     });
 });
 
+/* Speech speed via Speech API */
+
+
