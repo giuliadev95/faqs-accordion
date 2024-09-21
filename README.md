@@ -10,8 +10,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -30,7 +28,7 @@ Users should be able to:
 
 ![](./assets/images/screenshot_desktop.png)
 
-- See the Live Website here: [Add live site URL here](https://responsivefaqaccordion.netlify.app/)
+- [See the live site URL here](https://responsivefaqaccordion.netlify.app/)
 
 
 ## My process
