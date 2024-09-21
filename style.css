@@ -68,3 +68,9 @@ p {
     justify-content: space-between;
 }
 
+
+@media screen and(min-width: 769px) {
+    #page_wrapper {
+        margin-top: 50%;
+    }
+}
