@@ -31,7 +31,7 @@ p {
     color:hsl(292, 42%, 14%);
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 30%;
+    margin-top: 0;
 }
 
 .minus {
@@ -69,8 +69,10 @@ p {
 }
 
 
+/*
 @media screen and(min-width: 769px) {
     #page_wrapper {
         margin-top: 50%;
     }
 }
+*/
