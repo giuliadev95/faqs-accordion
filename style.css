@@ -1,38 +1,37 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: block;
     height: 100vh;
     width: 100%;
     background: linear-gradient(180deg, hsl(292, 42%, 14%) 30%, hsl(275, 100%, 97%) 10%);
     background-repeat: no-repeat;
     background-size: contain;
     font-family: "Work Sans", sans-serif;
-       
+    line-height: calc(1em + 0.5rem);      
 }
 
 p {
     color: hsl(292, 16%, 49%);
     font-weight: 400;
-    font-size: 4wv;
+    font-size: calc(0.8rem + 0.5vw);
 }
+
 .h1 {
     font-weight:700;
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: calc(2rem + 0.5vw);
 }
 
 .h2 {
     font-weight: 600;
-    font-size: clamp(1.5rem, 4vw, 2.5rem); 
+    font-size: calc(1rem + 0.5vw);
 }
 
 #page_wrapper {
+    max-width: 600px;
     background-color: white;
     color:hsl(292, 42%, 14%);
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    
+    margin-top: 30%;
 }
 
 .minus {
@@ -51,7 +50,6 @@ p {
     display: none;
 }
 
-
 .answer {
     max-height: 0;
     opacity: 0; 
@@ -59,11 +57,9 @@ p {
     transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
-.answer.show {
-    
+.answer.show {  
     max-height: 31.25rem;
-    opacity: 1;
-    
+    opacity: 1;   
 }
 
 .answer_container {
@@ -72,13 +68,3 @@ p {
     justify-content: space-between;
 }
 
-/*
-@media screen and (min-width: 426px) {
-    body {
-        background-image: url(./assets/images/background-pattern-desktop.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-
-    };
-}
-*/
