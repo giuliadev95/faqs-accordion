@@ -46,6 +46,11 @@ p {
     font-size: calc(1rem + 0.5vw);
 }
 
+.h2:hover {
+    color: hsl(281, 83%, 54%);
+    cursor: pointer;
+}
+
 .answer {
     max-height: 0;
     opacity: 0; 
@@ -107,5 +112,9 @@ a:focus, input:focus {
     outline-offset: 2px;
 }
 
+.link:hover {
+    color: hsl(281, 83%, 54%);
+    cursor: pointer;
+}
 
 
