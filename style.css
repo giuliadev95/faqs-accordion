@@ -1,3 +1,4 @@
+/* Body and containers */
 body {
     display: block;
     position: relative;
@@ -10,6 +11,25 @@ body {
     line-height: calc(1em + 0.5rem);      
 }
 
+.answer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#page_wrapper {
+    max-width: 600px;
+    background-color: white;
+    color:hsl(292, 42%, 14%);
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    position: relative;
+    margin-top: 20%;
+}
+
+
+/* Typography h1, h2, p */
 p {
     color: hsl(292, 16%, 49%);
     font-weight: 400;
@@ -26,15 +46,29 @@ p {
     font-size: calc(1rem + 0.5vw);
 }
 
-#page_wrapper {
-    max-width: 600px;
-    background-color: white;
-    color:hsl(292, 42%, 14%);
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 0;
-    position: relative;
-    margin-top: 20%;
+.answer {
+    max-height: 0;
+    opacity: 0; 
+    overflow: hidden; 
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.answer.show {  
+    max-height: 31.25rem;
+    opacity: 1;   
+}
+
+/* Buttons */
+button {
+    border: none;
+    background: none;
+}
+
+button:focus {
+    outline: 2px solid hsl(292, 42%, 14%);
+    outline-offset: 4px; 
+    background-color: hsl(275, 100%, 97%);
+    box-shadow: 0 0 8px rgba(173, 40, 235, 0.5); 
 }
 
 .minus {
@@ -53,29 +87,10 @@ p {
     display: none;
 }
 
-.answer {
-    max-height: 0;
-    opacity: 0; 
-    overflow: hidden; 
-    transition: max-height 0.5s ease, opacity 0.5s ease;
-}
-
-.answer.show {  
-    max-height: 31.25rem;
-    opacity: 1;   
-}
-
-.answer_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/* Links: <a> */
+a:focus, input:focus {
+    outline: 2px dashed hsl(292, 42%, 14%); /* Bordo tratteggiato */
+    outline-offset: 2px;
 }
 
 
-/*
-@media screen and(min-width: 769px) {
-    #page_wrapper {
-        margin-top: 50%;
-    }
-}
-*/
