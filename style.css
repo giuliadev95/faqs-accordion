@@ -68,6 +68,11 @@ p {
     margin-top: 1rem;
     color:hsl(292, 16%, 49%);
     font-weight: 600;
+    font-size: 15px;
+}
+
+#attribution a {
+    font-size: 15px;
 }
 
 /* Buttons */
